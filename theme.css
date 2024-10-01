@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Verdana';
-    background-color: #363636; /* Light grey background */
-    color: #dfdfdf; /* Dark grey text */
+    background-color: #363636; /* grey background */
+    color: #dfdfdf; /* light grey text */
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(to left, rgb(95, 59, 29), orange, red, green);
+    background: linear-gradient(to left, rgb(255, 153, 0), rgb(255, 244, 244));
     background-clip: text;
     color: transparent;
     background-color: #242424; /* Dark grey */
@@ -21,9 +21,9 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .officeManEmoji {
-    background: none; /* Removes the gradient from the emoji */
-    color: #dfdfdf;   /* Apply a solid color for the emoji */
+header .ManEmoji {
+    background: none; /* Removes the gradient from emoji */
+    color: #dfdfdf;   /* Apply a solid color for emoji */
 }
 
 h1 {
@@ -32,14 +32,26 @@ h1 {
 }
 
 nav a {
+    background: none;
+    color: #dfdfdf;
     margin: 0 15px;
-    color: #704f2d;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
+    /*box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px #464646;*/
     text-decoration: underline;
+}
+
+#homepage_me {
+        width: 200px;
+        border-radius: 20px;
+        float: left;
+        margin: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+
 }
 
 main {
@@ -57,10 +69,11 @@ p {
 }
 
 footer {
+    font-size: 0.8em;
     text-align: center;
     padding: 20px;
     background-color: #3B3B3B; /* Dark grey */
-    color: #704f2d; /* Soft brown */
+    color: #615d5b; /* Soft grey */
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,6 +87,10 @@ a {
 }
 
 a:hover {
-    color: #704f2d; /* Soft brown */
+    color: #eca660; /* Soft yellow */
+    background-color: #6e6e6e;
+    padding: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    border-radius: 5px;
     text-decoration: underline;
 }
