@@ -4,7 +4,7 @@ const randomButton = document.getElementById('random-button'); // Add this line
 
 const fetchMovie = async () => {
     const movieTitle = document.getElementById('movie-input').value;
-    const response = await fetch(`http://www.omdbapi.com/?t=${movieTitle}&apikey=1f6e6d49`);
+    const response = await fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=1f6e6d49`);
     const data = await response.json();
 
     if (data.Response === 'True') {
