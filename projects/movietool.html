@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie Grid Tool</title>
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="movietool.css"> 
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to jonjackson.xyz 
+            <span class="ManEmoji">🎬</span>
+        </h1>
+        <nav>
+
+            <!--Planned Sidebar-->
+            
+            
+            <a class="home-link" href="../index.html">Home</a> 
+                <a href="../projects.html">Projects</a>
+                <a href="../thoughts.html">Thoughts</a> 
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+    <h2>Movie Grid Generator</h2>
+    
+    <div class="input-container"> <!-- Added div for centering -->
+        <input type="text" id="movie-input" placeholder="Enter movie title">
+        <button id="fetch-button">Load Movie</button>
+        <button id="random-button">Randomly Select One</button>
+    </div>
+    <div id="movie-container"></div>
+    <main>
+        <p>This tool is built for instances when you have a couple of movies in mind and want to quickly pull up the posters for them. Just type in the names one at a time and it will build a grid. I added a bonus random selector for those times when you’re really struggling to pick what to watch tonight!</p>
+
+        <p>While I named it Movie Grid Generator, it works just as well for TV shows too.</p>
+    </main>
+    
+    <!-- Link to the JS file -->
+    <script src="movietool.js"></script> 
+    
+</body>
+</html>

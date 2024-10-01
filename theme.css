@@ -64,7 +64,8 @@ main {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1em;
+    font-style: normal;
     margin-bottom: 20px;
 }
 
@@ -94,3 +95,18 @@ a:hover {
     border-radius: 5px;
     text-decoration: underline;
 }
+
+toolshyperlink {
+    color: rgb(255, 182, 47); /* Dark grey */
+    font-weight: bold;
+}
+
+toolshyperlink:hover {
+    color: #eca660; /* Soft yellow */
+    background-color: #6e6e6e;
+    padding: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+

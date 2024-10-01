@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana';
+    background-color: #363636; /* grey background */
+    color: #dfdfdf; /* light grey text */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to left, rgb(255, 153, 0), rgb(255, 244, 244));
+    background-clip: text;
+    color: transparent;
+    background-color: #242424; /* Dark grey */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .ManEmoji {
+    background: none; /* Removes the gradient from emoji */
+    color: #dfdfdf;   /* Apply a solid color for emoji */
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav a {
+    background: none;
+    color: #dfdfdf;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    /*box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px #464646;*/
+    text-decoration: underline;
+}
+
+#homepage_me {
+        width: 200px;
+        border-radius: 20px;
+        float: left;
+        margin: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #6e6e6e; /* Light grey */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 20px;
+    background-color: #3B3B3B; /* Dark grey */
+    color: #615d5b; /* Soft grey */
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #2E2E2E; /* Dark grey */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eca660; /* Soft yellow */
+    background-color: #6e6e6e;
+    padding: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+/*Styling for movie tool*/
+#movie-poster {
+    max-width: 250px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+#movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+h2 {
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, rgb(255, 153, 0), rgb(255, 244, 244));
+    background-clip: text;
+    color: transparent;
+    background-color: #242424; /* Dark grey */
+}
+
+.input-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Space below the input container */
+}
+
+#movie-input {
+    margin-right: 10px; /* Space between input and button */
+    padding: 5px; /* Padding for input field */
+}
+.movie-item {
+    position: relative; /* Set relative positioning for absolute child elements */
+    /*margin: 5px;*/
+    text-align: center; 
+}
+
+.remove-button {
+    display: none; /* Initially hide the button */
+    position: absolute; /* Position the button over the poster */
+    top: 200px; /* Adjust the position */
+    right: 60px; /* Adjust the position */
+    font-size: 2em;
+    background-color: rgba(247, 0, 0, 0.3); /* Red background for visibility */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Show the remove button on hover */
+.movie-item:hover .remove-button {
+    display: block; /* Show the button when hovering over the movie item */
+}
+.title-container {
+    margin-bottom: -5px;
+    background-color: rgba(255, 255, 255, 0.07); 
+    padding: 2px; 
+    border-radius: 5px; 
+}
+.title-container h2 {
+    font-size: 1em; /* Adjust size as needed */
+    color: #dfdfdf; /* Light grey text color */
+    background: none; /* Remove any background styles */
+    text-shadow: none; /* Remove any text shadow if applied */
+}
+
+div {
+    padding: 5px;
+}
+
+#random-button {
+    padding: 5px;
+    background-color: #dfb25f; /* Example color */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px; /* Add space above */
+    margin-left: 10px;
+}
+
+#random-button:hover {
+    background-color: #a58446; /* Darker shade on hover */
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 225, 143, 0.774), 0 0 10px rgba(255, 225, 143, 0.774), 0 0 15px rgba(255, 225, 143, 0.774), 0 0 20px rgba(255, 225, 143, 0.774), 0 0 25px rgba(255, 225, 143, 0.774);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 225, 143, 0.774), 0 0 20px rgba(255, 225, 143, 0.774), 0 0 30px rgba(255, 225, 143, 0.774), 0 0 40px rgba(255, 225, 143, 0.774), 0 0 50px rgba(255, 225, 143, 0.774);
+        transform: scale(1.01); /* Slightly grow the poster */
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 225, 143, 0.774), 0 0 10px rgba(255, 225, 143, 0.774), 0 0 15px rgba(255, 225, 143, 0.774), 0 0 20px rgba(255, 225, 143, 0.774), 0 0 25px rgba(255, 225, 143, 0.774);
+        transform: scale(1);
+    }
+}
+
+.glow {
+    animation: glowing 5.5s infinite alternate; /* Infinite glowing effect */
+}
