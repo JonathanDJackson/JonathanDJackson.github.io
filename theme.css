@@ -27,7 +27,8 @@ header .ManEmoji {
 }
 
 h1 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -110,3 +111,16 @@ toolshyperlink:hover {
     text-decoration: underline;
 }
 
+sociallink {
+    color: rgb(255, 182, 47); /* Dark grey */
+    font-weight: bold;
+}
+
+sociallink:hover {
+    color: #eca660; /* Soft yellow */
+    background-color: #6e6e6e;
+    padding: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    border-radius: 5px;
+    text-decoration: underline;
+}
